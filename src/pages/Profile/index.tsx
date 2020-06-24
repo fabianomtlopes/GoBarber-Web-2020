@@ -57,7 +57,9 @@ const Profile: React.FC = () => {
             .oneOf([Yup.ref('password'), null], 'Confirmação incorreta'),
         });
 
-        await schema.validate(data, { abortEarly: false });
+        await schema.validate(data, {
+          abortEarly: false,
+        });
 
         const {
           name,
