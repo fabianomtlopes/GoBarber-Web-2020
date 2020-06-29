@@ -52,6 +52,7 @@ const Input: React.FC<InputProps> = ({
       isErrored={!!error}
       isFilled={isFilled}
       isFocused={isFocused}
+      data-testid="input-container" // apenas para realizar os testes
     >
       {Icon && <Icon size={20} />}
       <input
